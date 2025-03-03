@@ -122,20 +122,14 @@ header {
     width: 100%;
     position: fixed;
     top: 0; 
-    padding: 1rem; 
+    padding:0; 
     z-index: 50;
 }
 
 header .barra-navegacion {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 1rem 0;
-}
-
-.carrito {
-    height: 4rem;
-    width: 4rem;
 }
 
 .contenedor {
@@ -145,17 +139,25 @@ header .barra-navegacion {
 
 .seccion-1{
     display: flex;
+    width: 40rem;
+    justify-content: space-between;
+    padding-left: 1rem;
 }
-.seccion-2{
-    display: flex;
-}
+
 .seccion-1 .weirdo-logo {
     width: 15rem;
     height: auto;
 }
 
+.seccion-2{
+    display: flex;
+    width: 18rem;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
 .seccion-2 .carrito img{
-    width: 100%;
-    height: auto;
+    width: 3.2rem;
+    height: 3.2rem;
 }
 
