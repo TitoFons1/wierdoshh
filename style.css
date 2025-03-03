@@ -10,6 +10,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -19,19 +20,18 @@ html {
 }
 /*Globales*/
 body{
+    margin: 0;
+    padding: 0;
     background-color: var(--primarino);
     font-family: var(--fuentePrincipal);
+    color: var(--blanco);
     font-size: 1.6rem;
-    line-height: 1.5rem;
-    margin: 0; 
-    padding: 0;
-    color: white;
-    scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
     color: var(--blanco);
+    font-size: 2.8rem;
 }
 
 p{
@@ -69,21 +69,21 @@ h3 {font-size: 2.4rem; }
     transition: transform 1s ease-in-out;
 }
 
-.instagram:hover {
+.instagram:hover .instagram_image{
     transform: scale(1.1);
 }
 
 /* Sección de Landing */
 
 .landing {
+    position: fixed;
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 10;
+    flex-direction: column;
+    background-color: var(--primarino);
     transition: opacity 1s ease-in-out;
 }
 
@@ -93,8 +93,6 @@ h3 {font-size: 2.4rem; }
 }
 
 .landing_boton {
-    background-color: none;
-    border: none; 
     cursor: pointer;
     margin-top: 2rem;
     animation: bounce 1.5s infinite; 
@@ -103,7 +101,7 @@ h3 {font-size: 2.4rem; }
 .landing_boton svg {
     width: 6rem;
     height: 6rem; 
-    transition: transform 1s;
+    transition: transform 0.5 ease-in-out;
 }
 
 .landing_boton:hover svg{
@@ -117,16 +115,27 @@ h3 {font-size: 2.4rem; }
     50% {transform: translateY(5px); }
 }
 
+/*header */
+
 header {
-    background: rgba(0,0,0,0.8);
-    padding: 1rem; 
+    background: rgba(0,0,0,0.5); 
     width: 100%;
-    position: relative;
-    top: 0rem; 
-    opacity: 0;
-    transform: translateY(-5rem);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    position: fixed;
+    top: 0; 
+    padding: 1rem; 
     z-index: 50;
+}
+
+header .barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.carrito {
+    height: 4rem;
+    width: 4rem;
 }
 
 .contenedor {
@@ -134,23 +143,19 @@ header {
     padding-top: 10rem; 
 }
 
-/*Muestra el header cuando se navega a #main */
-
-/* Transiciones suaves */
-/* Hace que la landing desaparezca con efecto de deslizamiento */
-#main:target ~ .landing {
-    transform: translateY(-100%);
-    opacity: 0;
-    pointer-events: none;
+.seccion-1{
+    display: flex;
+}
+.seccion-2{
+    display: flex;
+}
+.seccion-1 .weirdo-logo {
+    width: 15rem;
+    height: auto;
 }
 
-/* Hace que el header aparezca con fade-in y deslizamiento */
-#main:target ~ header {
-    opacity: 1;
-    transform: translateY(0);
-    position: fixed; /* Se mantiene en la parte superior */
-    top: 0;
-    left: 0;
+.seccion-2 .carrito img{
     width: 100%;
-    z-index: 50;
+    height: auto;
 }
+
