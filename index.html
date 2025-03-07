@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Weirdo.Shh</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,57 +13,64 @@
 </head>
 
 <body>
-    <!-- Instagram lock-->
-    <div>
-        <a href="https://www.instagram.com/weirdo.shh/" class="instagram">
-            <img class="instagram_image" src="img/icons/instagram.png" alt="enlace-instagram">
-        </a>
-    </div>
-    <!-- Landing logo -->
-    <section class="landing" id = "landing">
-        <img src="img/logo-removebg-preview.png" alt="landing_logo" class="landing_logo">
-        <a href="#main" class="landing_boton">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-circle-arrow-down">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
-                <path d="M8 12l4 4" />
-                <path d="M12 8v8" />
-                <path d="M16 12l-4 4" />
-            </svg>
-        </a>
-        <div>
+    <!--splashscreen-->
+    <section class = "splashscreen">
+        <!--landing logo -->
+        <div class="logo">
+            <img src="img/logo-removebg-preview.png" alt="logotipo" class="logo_img">
+            <a href="#main" class="logo_boton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-circle-arrow-down">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                    <path d="M8 12l4 4" />
+                    <path d="M12 8v8" />
+                    <path d="M16 12l-4 4" />
+                </svg>
+            </a>
+        </div>
+        <!--FIN landing logo -->
+        <!--instagram lock-->
+        <div class = "instagram">
             <a href="https://www.instagram.com/weirdo.shh/" class="instagram">
                 <img class="instagram_image" src="img/icons/instagram.png" alt="enlace-instagram">
             </a>
         </div>
+        <!--FIN instagram lock-->
+        <!--derechos reservados-->
+        <div class = "derechos-reservados">
+            <p>Todos los derechos reservados Roberto Latino 2025.</p>
+        </div>
+        <!--FIN derechos reservados-->
     </section>
+    <!--FIN splashscreen-->
+
     <header>
-        <nav class = "barra-navegacion">
-            <div class = "seccion-1">
-                <img class = "weirdo-logo" src="img/Weirdo_logo-removebg-preview.png" alt="">
-                <a class = "sobre-nosotros" href="#">Sobre nosotros</a>
-                <a class = "productos" href="#">Productos</a>
+        <nav class="barra-navegacion">
+            <div class="seccion-1">
+                <img class="weirdo-logo" src="img/Weirdo_logo-removebg-preview.png" alt="">
+                <a class="sobre-nosotros" href="#">Sobre nosotros</a>
+                <a class="productos" href="#">Productos</a>
             </div>
-            <div class = "seccion-2">
-                <a class = "buscar" href="#">Buscar</a>
-                <a class = "inicio" href="#">Inicio</a>
-                <a class = "carrito" href="#">
+            <div class="seccion-2">
+                <a class="buscar" href="#">Buscar</a>
+                <a class="inicio" href="#">Inicio</a>
+                <a class="carrito" href="#">
                     <img src="img/icons/shopping-bag.png">
                 </a>
             </div>
         </nav>
     </header>
-    <main id="main-content" class="contenedor">
-        <section class = "contenido-principal">
-            <a href="#">
+    <main>
+        <section class="contenedor-p">
+            <a class="contenedor-p_img" href="#">
                 <img src="img/canva 3.png" alt="">
             </a>
-            <a href="#">
+            <a class="contenedor-p_img" href="#">
                 <img src="img/canva 1.png" alt="">
             </a>
-            <a href="#">
+            <a class="contenedor-p_img" href="#">
                 <img src="img/canva 4.png" alt="">
             </a>
         </section>
