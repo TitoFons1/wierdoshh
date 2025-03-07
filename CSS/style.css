@@ -1,0 +1,163 @@
+:root {
+    --primarino: #131218;
+    --blanco: #FFF;
+    --negro: #000;
+
+    --fuentePrincipal: 'Karantina', cursive;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/*Globales*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--primarino);
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2.8rem;
+}
+
+p{
+    color: var(--blanco);
+    display: flex; 
+    justify-content: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--blanco);
+}
+
+h1 {font-size: 4rem; }
+h2 {font-size: 3.2rem; }
+h3 {font-size: 2.4rem; }
+
+/*Logo de instagram*/
+
+.instagram {
+    position: fixed; 
+    bottom: 3rem; 
+    left: 4.5rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+.instagram-image {
+    width: 50%;
+    height: auto; 
+    transition: transform 1s ease-in-out;
+}
+
+.instagram:hover .instagram_image{
+    transform: scale(1.1);
+}
+
+/* Sección de Landing */
+
+.landing {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primarino);
+    transition: opacity 1s ease-in-out;
+}
+
+.landing_logo {
+    width: 45rem;
+    height: 45rem;
+}
+
+.landing_boton {
+    cursor: pointer;
+    margin-top: 2rem;
+    animation: bounce 1.5s infinite; 
+}
+
+.landing_boton svg {
+    width: 6rem;
+    height: 6rem; 
+    transition: transform 0.5 ease-in-out;
+}
+
+.landing_boton:hover svg{
+    transform: scale(1.1);
+}
+
+/*animación de la flecha*/
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0);}
+    50% {transform: translateY(5px); }
+}
+
+/*header */
+
+header {
+    background: rgba(0,0,0,0.5); 
+    width: 100%;
+    position: fixed;
+    top: 0; 
+    padding:0; 
+    z-index: 50;
+}
+
+header .barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.contenedor {
+    min-height: 200vh; 
+    padding-top: 10rem; 
+}
+
+.seccion-1{
+    display: flex;
+    width: 40rem;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+.seccion-1 .weirdo-logo {
+    width: 15rem;
+    height: auto;
+}
+
+.seccion-2{
+    display: flex;
+    width: 18rem;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+.seccion-2 .carrito img{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
