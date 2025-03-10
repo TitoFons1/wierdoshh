@@ -54,7 +54,7 @@ h3 {font-size: 2.4rem; }
 
 /* Sección de Landing */
 .splashscreen{
-    position: fixed;
+    position: relative;
     background-color: var(--primarino);
     width: 100%;
     height: 100vh;
@@ -181,7 +181,6 @@ header .barra-navegacion {
     grid-template-columns: repeat(3,1fr);
     width: 100%;
     height: 100vh;
-
 }
 
 .contenedor-p_img img{
