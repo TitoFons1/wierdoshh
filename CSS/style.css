@@ -177,6 +177,7 @@ header {
 /*primera sección*/
 
 .contenedor-p{
+    z-index: 1000;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     width: 100%;
@@ -197,6 +198,73 @@ footer{
     padding: 1rem;
     display: flex;
     justify-content: center;
+}
+
+/* SECCIÓN PRODUCTOS*/
+
+.section-productos {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.prodcuto-1,
+.prodcuto-2,
+.prodcuto-3,
+.prodcuto-4 {   
+    background-color: rgb(151, 142, 132);
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    height: 260px;
+}
+.prodcuto-1 {
+    position: absolute;
+    top: 0px;
+    left: 290px;
+}
+.prodcuto-2 {
+    position: absolute;
+    top: 100px;
+    left: 660px;
+}
+.prodcuto-3 {
+    position: absolute;
+    top: 0px;
+    right: 660px;
+}
+.prodcuto-4 {
+    position: absolute;
+    top: 100px;
+    right: 290px;
+}
+
+.prodcuto-1,
+.prodcuto-3 {
+    transform: rotate(-10deg);
+}
+
+.prodcuto-2,
+.prodcuto-4 {
+    transform: rotate(10deg);
+}
+
+
+.foto-producto {
+    width: 200px;
+    height: 200px;
+}
+.nombre-producto {
+    font-size: 25px;
+    margin-top: 3px;
+    font-weight: bold;
 }
 
 /* SECCIÓN SOBRE MI */
