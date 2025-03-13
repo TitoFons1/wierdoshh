@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800"
+   height="800"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="chat-3-svgrepo-com.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050" />
+  <g
+     id="g2"
+     transform="matrix(-1,0,0,1,24,0)">
+    <path
+       fill="none"
+       d="M 0,0 H 24 V 24 H 0 Z"
+       id="path1" />
+    <path
+       d="m 7.2910058,20.823994 -5.291,1.176 1.176,-5.291 a 9.956,9.956 0 0 1 -1.176,-4.709 c 0,-5.5229995 4.477,-9.9999995 9.9999992,-9.9999995 5.523,0 10,4.477 10,9.9999995 0,5.523 -4.477,10 -10,10 a 9.956,9.956 0 0 1 -4.7089992,-1.176 z m 0.29,-2.113 0.6529997,0.35 a 7.955,7.955 0 0 0 3.7659995,0.939 8,8 0 1 0 -7.9999992,-8 c 0,1.334 0.325,2.618 0.94,3.766 l 0.349,0.653 -0.655,2.947 z"
+       id="path2"
+       style="fill:#ffffff" />
+  </g>
+</svg>
