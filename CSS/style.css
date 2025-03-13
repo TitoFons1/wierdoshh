@@ -213,23 +213,22 @@ footer{
 
 
 .section-productos {
-    margin-top: 150px;
-    margin-bottom: 150px;
     justify-content: space-evenly;
     align-items: center;
     display: flex;
     position: relative;
     width: 100%;
+    height: 100vh;
 }
 
-.prodcuto-1,
-.prodcuto-2,
-.prodcuto-3,
-.prodcuto-4 {   
+.producto-1,
+.producto-2,
+.producto-3,
+.producto-4 {   
     scale: 1.1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     width: 240px;
     height: 260px;
@@ -247,13 +246,13 @@ footer{
     align-items: center;
 }
 
-.prodcuto-1,
-.prodcuto-3 {
+.producto-1,
+.producto-3 {
     transform: rotate(10deg);
 }
 
-.prodcuto-2,
-.prodcuto-4 {
+.producto-2,
+.producto-4 {
     transform: rotate(-10deg);
 }
 
@@ -268,10 +267,10 @@ footer{
     color: black;
 }
 
-.prodcuto-1:hover,
-.prodcuto-2:hover,
-.prodcuto-3:hover,
-.prodcuto-4:hover {
+.producto-1:hover,
+.producto-2:hover,
+.producto-3:hover,
+.producto-4:hover {
     transform: scale(1.4);
     transition: transform 0.5s;
     cursor: pointer;
