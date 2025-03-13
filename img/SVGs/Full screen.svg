@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="167.33263mm"
+   height="167.33211mm"
+   viewBox="0 0 167.33263 167.33211"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="Theater mode.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-21.075425,-49.593298)">
+    <path
+       d="M 92.019012,207.9659 H 30.21786 L 30.034925,148.5 v 59.28348 c 0,0.10119 0.08174,0.18242 0.182935,0.18242 z"
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:17.919;stroke-dashoffset:3.7"
+       id="path19"
+       sodipodi:nodetypes="cccssc" />
+    <path
+       d="M 30.034925,121.23367 V 58.735216 L 92.019012,58.552799 H 30.21786 c -0.101192,0 -0.182935,0.08123 -0.182935,0.182417 z"
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:17.919;stroke-dashoffset:3.7"
+       id="path18"
+       sodipodi:nodetypes="cccssc" />
+    <path
+       d="m 121.597,58.552799 h 57.66862 l 0.18293,62.680871 V 58.735216 c 0,-0.101191 -0.0817,-0.182417 -0.18293,-0.182417 z"
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:17.919;stroke-dashoffset:3.7"
+       id="path17"
+       sodipodi:nodetypes="cccssc" />
+    <path
+       d="M 179.44855,207.78348 121.597,207.9659 h 57.66862 c 0.10119,0 0.18293,-0.0812 0.18293,-0.18242 V 148.5 Z"
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:17.919;stroke-dashoffset:3.7"
+       id="path16"
+       sodipodi:nodetypes="ccsscc" />
+  </g>
+</svg>
