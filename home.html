@@ -19,16 +19,34 @@
 <body>
     <header>
         <nav class="barra-navegacion">
-            <a class="productos" href="#section-productos">Productos</a>
-            <a class="sobre-nosotros" href="#sobre-mi">Sobre nosotros</a>
-            <a class="contacto" href="#">Contacto</a>
-            <img class="weirdo-logo" src="img/Weirdo_logo-removebg-preview.png" alt="">
-            <a class="buscar" href="#">Buscar</a>
-            <a class="inicio" href="#">Inicio</a>
-            <a class="carrito" href="#">
-                <img src="img/icons/shopping-bag.png">
-            </a>
+            <div class="elementos">
+                <label class="label-hamburguesa" for="menu-hamburguesa-f">
+                    <img class="img-hamburguesa" src="img/SVGs/hamburger-svgrepo-com.svg" alt="">
+                </label>
+                <input class="checkbox" type="checkbox" name="" id="menu-hamburguesa-f">
+                <ul class="ul-links">
+                    <li class = "li_links">
+                        <a class = "links" href="#">Inicio</a>
+                    </li>
+                    <li class = "li_links">
+                        <a class = "links" href="#">Buscar</a>
+                    </li>
+                    <li class = "li_links">
+                        <a class = "links" href="#">Sobre nosotros</a>
+                    </li>
+                    <li class = "li_links">
+                        <a class = "links" href="#">Contacto</a>
+                    </li>
+                </ul>
             </div>
+            <a class="elemento_inicio elementos" href="#">Inicio</a>
+            <a class="elemento_sobre-nosotros elementos" href="#sobre-mi">Sobre nosotros</a>
+            <img class="weirdo-logo" src="img/Weirdo_logo-removebg-preview.png" alt="">
+            <a class="elemento_contacto elementos" href="#">Contacto</a>
+            <a class="elemento_buscar elementos" href="#">Buscar</a>
+            <a class="elemento_shopping-bag elementos" href="#">
+                <img class = "elementos_shopping-bag-img" src="img/icons/shopping-bag.png">
+            </a>
         </nav>
     </header>
   

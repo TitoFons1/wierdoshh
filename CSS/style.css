@@ -1,11 +1,11 @@
 :root {
     --primarino: #131218;
+    --secundario: rgb(32, 32, 32);
     --blanco: #FFF;
     --negro: #000;
 
     --fuentePrincipal: 'Karantina', cursive;
     --fuenteSecundaria: "Rubik Doodle Shadow", system-ui;
-
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -20,7 +20,7 @@ html {
 *:after {
     box-sizing: inherit;
 }
-/*Globales*/
+/*GLOBALES*/
 body{
     margin: 0;
     padding: 0;
@@ -45,6 +45,9 @@ img{
     max-width: 100%;
 }
 
+ol,ul {
+    list-style: none;
+}
 h1, h2, h3 {
     text-align: center;
     color: var(--blanco);
@@ -54,7 +57,7 @@ h1 {font-size: 4rem; }
 h2 {font-size: 3.2rem; }
 h3 {font-size: 2.4rem; }
 
-/* Sección de Landing */
+/* LANDING/SPLASHSCREEN */
 .splashscreen{
     position: relative;
     background-color: var(--primarino);
@@ -94,14 +97,14 @@ h3 {font-size: 2.4rem; }
     transform: scale(1.1);
 }
 
-/*animación de la flecha*/
+/*ANIMACIÓN DE LA FLECHA*/
 
 @keyframes bounce {
     0%, 100% { transform: translateY(0);}
     50% {transform: translateY(5px); }
 }
 
-/*Logo de instagram*/
+/*LOGO DE INSTAGRAM*/
 
 .instagram {
     position: fixed; 
@@ -122,7 +125,7 @@ h3 {font-size: 2.4rem; }
     transform: scale(1.1);
 }
 
-/* Derechos Reservados */
+/* DERECHOS RESERVADOS*/
 
 .derechos-reservados{
     display: flex;
@@ -131,7 +134,7 @@ h3 {font-size: 2.4rem; }
 }
 
 
-/*header */
+/*HEADER*/
 
 header {
     z-index: 1000;
@@ -139,26 +142,28 @@ header {
     position: fixed;
     width: 100%;
     height: 8rem;
-    top: 0;
 }
-
 .barra-navegacion {
     display: flex;
     justify-content: space-evenly;
     height: 100%;
+    width: 100%;
 }
 
-.barra-navegacion a {
+.elementos,
+.elementos-mh{
     display: flex;
     justify-content: center;
     padding-top: 2rem;
     height: 100%;
     width: 100%;
     color: var(--blanco);
+    cursor: pointer;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.barra-navegacion a:hover {
+.elementos:hover, 
+.elementos-mh:hover{
     transform: scale(1.1);
     background-color: rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -170,12 +175,56 @@ header {
     padding-top: 1rem;
 }
 
-.carrito img {
+.img-hamburguesa{
     width: 3.2rem;
     height: 3.2rem;
 }
 
-/*primera sección*/
+.elementos_shopping-bag-img {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+@media (max-width: 768px){
+    .elemento_inicio,
+    .elemento_sobre-nosotros,
+    .elemento_contacto,
+    .elemento_buscar{
+        position: absolute;
+        display: none;
+    }
+}
+
+/*MENU HAMBURGUESA*/
+
+.elementos-mh {
+    width: 100%;
+}
+
+.label-hamburguesa {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer; 
+    position: absolute;
+}
+
+.checkbox{
+    display: none;
+}
+
+.ul-links {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secundario);
+
+}
+
+/*PRIMERA SECCIÓN*/
+
+
 
 .contenedor-p{
     z-index: 1000;
@@ -292,7 +341,7 @@ footer{
 .sobre-mi_descripcion {
     width: 950px;
     height: 750px;
-    background-color: rgba(102, 102, 102, 0.2);
+    background-color: var(--secundario);
     border-radius: 50px;
     bottom: 30px;
     margin-left: 3rem;
